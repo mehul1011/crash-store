@@ -1,26 +1,10 @@
-import { FirebaseOptions } from 'firebase/app';
-
-const firebaseConfig: FirebaseOptions = {
-  apiKey: '',
-  authDomain: '',
-  projectId: '',
-  storageBucket: '',
-  messagingSenderId: '',
-  appId: '',
-  measurementId: '',
+export const environment = {
+  production: true,
+  apiKey: 'REPLACE_WITH_ENVIRONMENT_API_KEY',
+  authDomain: 'REPLACE_WITH_AUTH_DOMAIN',
+  projectId: 'REPLACE_WITH_PROJECT_ID',
+  storageBucket: 'REPLACE_WITH_STORAGE_BUCKET',
+  messagingSenderId: 'REPLACE_WITH_MESSAGING_SENDER_ID',
+  appId: 'REPLACE_WITH_APP_ID',
+  measurementId: 'REPLACE_WITH_MEASUREMENT_ID',
 };
-
-firebaseConfig.apiKey = process.env.FIREBASE_API_KEY as string;
-firebaseConfig.authDomain = process.env.FIREBASE_AUTH_DOMAIN as string;
-firebaseConfig.projectId = process.env.FIREBASE_PROJECT_ID as string;
-firebaseConfig.storageBucket = process.env.FIREBASE_STORAGE_BUCKET as string;
-firebaseConfig.messagingSenderId = process.env
-  .FIREBASE_MESSAGING_SENDER_ID as string;
-firebaseConfig.appId = process.env.FIREBASE_APP_ID as string;
-firebaseConfig.measurementId = process.env.FIREBASE_MEASUREMENT_ID as string;
-
-const environment = {
-  production: false,
-};
-
-export { firebaseConfig, environment };
