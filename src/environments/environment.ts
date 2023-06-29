@@ -20,7 +20,7 @@ firebaseConfig.appId = process.env.FIREBASE_APP_ID as string;
 firebaseConfig.measurementId = process.env.FIREBASE_MEASUREMENT_ID as string;
 
 const environment = {
-  production: true,
+  production: false,
 };
 
 export { firebaseConfig, environment };
