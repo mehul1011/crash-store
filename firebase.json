@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "crash-store",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

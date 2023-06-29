@@ -1,0 +1,9 @@
+<div class="content-box" *ngIf="listing">
+  <h2>Edit Listing</h2>
+  <app-listing-data-form
+    [listing]="listing"
+    [buttonText]="saveChanges"
+    (onSubmitEvent)="onSubmit($event)"
+  ></app-listing-data-form>
+</div>
+<div class="content-box" *ngIf="!listing">Your edit form is loading...</div>
