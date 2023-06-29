@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { ListingDataFormComponent } from './listing-data-form/listing-data-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
-// import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
@@ -29,7 +29,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     NavbarComponent,
   ],
   imports: [
-    // AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebase),
     BrowserModule,
     AppRoutingModule,
     FormsModule,
