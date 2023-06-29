@@ -1,5 +1,5 @@
 export const environment = {
-  production: true,
+  production: 'REPLACE_WITH_ENVIRONMENT_PRODUCTION',
   apiKey: 'REPLACE_WITH_ENVIRONMENT_API_KEY',
   authDomain: 'REPLACE_WITH_AUTH_DOMAIN',
   projectId: 'REPLACE_WITH_PROJECT_ID',

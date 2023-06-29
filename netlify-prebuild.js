@@ -21,6 +21,7 @@ const outputFile = "./src/environments/environment.prod.ts";
 const options = {
   files: filePath,
   from: [
+    /REPLACE_WITH_ENVIRONMENT_PRODUCTION/,
     /REPLACE_WITH_ENVIRONMENT_API_KEY/,
     /REPLACE_WITH_AUTH_DOMAIN/,
     /REPLACE_WITH_PROJECT_ID/,
