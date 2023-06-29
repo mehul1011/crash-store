@@ -21,14 +21,13 @@ const outputFile = "./src/environments/environment.prod.ts";
 const options = {
   files: filePath,
   from: [
-    production,
-    apiKey,
-    authDomain,
-    projectId,
-    storageBucket,
-    messagingSenderId,
-    appId,
-    measurementId,
+    /REPLACE_WITH_ENVIRONMENT_API_KEY/,
+    /REPLACE_WITH_AUTH_DOMAIN/,
+    /REPLACE_WITH_PROJECT_ID/,
+    /REPLACE_WITH_STORAGE_BUCKET/,
+    /REPLACE_WITH_MESSAGING_SENDER_ID/,
+    /REPLACE_WITH_APP_ID/,
+    /REPLACE_WITH_MEASUREMENT_ID/,
   ],
   to: [
     production,
